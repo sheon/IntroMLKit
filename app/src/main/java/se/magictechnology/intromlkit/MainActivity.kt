@@ -120,7 +120,6 @@ fun SetUpAButton(name: String, imageResourceId: Int, modifier: Modifier = Modifi
             )
             val stringBuilder = StringBuilder()
             detectedText?.textBlocks?.mapNotNull { block ->
-                Log.i("Ehsan: Blocks",block.text)
                 stringBuilder.appendLine(block.text)
             }
             CircularProgressIndicator(modifier.alpha(progressBarAlpha))
